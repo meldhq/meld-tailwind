@@ -1,0 +1,39 @@
+{
+  "name": "@meldhq/meld-tailwind",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meldhq/meld-tailwind.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/meld-tailwind.umd.js",
+  "module": "./dist/meld-tailwind.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/meld-tailwind.es.js",
+      "require": "./dist/meld-tailwind.umd.js"
+    }
+  },
+  "publishConfig": {
+    "@meldhq:registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.34",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "tailwindcss-animate": "^1.0.7"
+  }
+}
